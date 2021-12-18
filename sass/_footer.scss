@@ -1,0 +1,65 @@
+.footer {
+  color: #fff;
+  background-color: var(--footer-color);
+  padding: 60px 0;
+}
+
+.footer a.logo {
+  color: #fff;
+}
+
+.footer li a {
+  color: var(--footer-text-color);
+}
+
+address {
+  margin-top: 20px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.address:last-child {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress-logo {
+  margin-right: 70px;
+}
+
+.invitation {
+  padding-top: 12px;
+  margin-right: 93px;
+}
+
+.invitation p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.invitation .social-link {
+  color: var(--icon-hover-color);
+  background-color: var(--footer-invitation-bg);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.invitation .social-link:hover,
+.invitation .social-link:focus {
+  background-color: var(--button-color);
+}
