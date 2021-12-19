@@ -19,38 +19,41 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="upper-line">
-      <div class="conteiner upper-nav">
-        <a href="index.html" class="logo header"
-          ><span class="web">Web</span>Studio</a
+    <header class="header">
+      <div class="conteiner conteiner--header">
+        <a href="index.html" class="logo logo--header"
+          ><span class="logo__web">Web</span>Studio</a
         >
         <nav>
-          <ul class="no-dots navigation-list">
-            <li class="navigation pages">
-              <a href="index.html" class="link"> Студия </a>
+          <ul class="nav__list no-dots">
+            <li class="nav__item">
+              <a class="nav__link link" href="index.html"> Студия </a>
             </li>
-            <li class="navigation pages">
-              <a href="./portfolio.html"> Портфолио </a>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html"> Портфолио </a>
             </li>
-            <li class="navigation pages"><a href=""> Контакты </a></li>
+            <li class="nav__item">
+              <a class="nav__link" href=""> Контакты </a>
+            </li>
           </ul>
         </nav>
-        <ul class="no-dots contacts-list">
-          <li class="navigation contacts">
-            <a href="mailto:info@devstudio.com"
-              ><svg class="envelope" width="16" height="12">
+
+        <ul class="contacts__list no-dots">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon" width="16" height="12">
                 <use
                   href="./images/contacts/symbol-defs.svg#icon-envelope-1"
                 ></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="navigation contacts">
-            <a href="tel:+380961111111"
-              ><svg class="envelope" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use
                   href="./images/contacts/symbol-defs.svg#icon-smartphone-1"
                 ></use></svg
@@ -400,7 +403,7 @@
       <div class="conteiner footer-links">
         <div class="adress-logo">
           <a href="index.html" class="logo"
-            ><span class="web">Web</span>Studio</a
+            ><span class="logo__web">Web</span>Studio</a
           >
           <address>
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>

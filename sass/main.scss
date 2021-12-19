@@ -1,16 +1,21 @@
-@import "./utilites";
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
 
-@import "./header";
+@import "./components/conteiner";
 
-@import "./hero";
-@import "./benefits";
-@import "./pictures";
-@import "./team";
-@import "./clienrs";
-@import "./modal";
-@import "./forms";
-@import "./forms-modal";
+@import "./layout/header";
+@import "./components/logo";
+@import "./utils/visuallyhidden";
 
-@import "./portfolio";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/forms-modal";
+@import "./components/benefits";
+@import "./components/pictures";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio";
 
-@import "./footer";
+@import "./layout/footer";
+@import "./components/forms";
