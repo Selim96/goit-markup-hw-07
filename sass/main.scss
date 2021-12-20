@@ -4,12 +4,14 @@
 @import "./base/common";
 
 @import "./layout/header";
+@import "./components/forms";
 @import "./layout/footer";
 
 @import "./components/conteiner";
 @import "./components/logo";
 
 @import "./components/hero";
+@import "./components/button";
 @import "./components/modal";
 @import "./components/forms-modal";
 @import "./components/benefits";
@@ -18,5 +20,3 @@
 @import "./components/team";
 @import "./components/clients";
 @import "./components/portfolio";
-
-@import "./components/forms";

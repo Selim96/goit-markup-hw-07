@@ -2,10 +2,11 @@
   color: #fff;
   background-color: var(--footer-color);
   padding: 60px 0;
-  .conteiner--& {
-    display: flex;
-    align-items: baseline;
-  }
+}
+
+.conteiner--footer {
+  display: flex;
+  align-items: baseline;
 }
 
 .adress-logo {
