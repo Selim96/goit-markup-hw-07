@@ -1,13 +1,16 @@
 .pictures {
   padding-top: 0;
-
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
   &__item {
     width: 370px;
+    position: relative;
   }
   &__images {
     display: block;
   }
-
   &__text {
     font-weight: 700;
     font-size: 14px;
@@ -25,13 +28,4 @@
     bottom: 0;
     left: 0;
   }
-}
-
-.pictures__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pictures__caption {
-  position: relative;
 }

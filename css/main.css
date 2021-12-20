@@ -537,12 +537,6 @@ body {
   width: 270px;
 }
 
-.benefits__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .benefits__item::before {
   display: block;
   content: "";
@@ -552,6 +546,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .benefits__item:nth-child(1)::before {
@@ -574,8 +574,14 @@ body {
   padding-top: 0;
 }
 
+.pictures__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pictures__item {
   width: 370px;
+  position: relative;
 }
 
 .pictures__images {
@@ -598,15 +604,6 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.pictures__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pictures__caption {
-  position: relative;
 }
 
 .social__list {
@@ -716,11 +713,11 @@ body {
   margin-bottom: 50px;
 }
 
-.radio-buttons-item {
+.radio-buttons__item {
   margin-right: 8px;
 }
 
-.radio-buttons-item:last-child {
+.radio-buttons__item:last-child {
   margin-right: 0;
 }
 

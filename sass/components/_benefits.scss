@@ -14,23 +14,22 @@
   }
   &__item {
     width: 270px;
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      background-color: var(--benefits-item-color);
+      background-size: 70px 70px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+    }
   }
   &__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-}
-
-.benefits__item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-color: var(--benefits-item-color);
-  background-size: 70px 70px;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
 }
 
 .benefits__item:nth-child(1)::before {
