@@ -4,12 +4,12 @@
   position: relative;
 }
 
-.lable-input {
+.subscribe {
   display: flex;
   flex-direction: column;
 }
 
-.footer-email {
+.subscribe__email {
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -19,7 +19,7 @@
   color: var(--icon-hover-color);
 }
 
-.footer-input {
+.subscribe__input {
   background-color: transparent;
   width: 358px;
   height: 50px;
