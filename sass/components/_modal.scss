@@ -30,20 +30,19 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  &:focus {
+    border-color: var(--button-color);
+    fill: var(--button-color);
+  }
 }
 
-.close-btn-icon {
+.close-btn__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:focus {
-  border-color: var(--button-color);
-  fill: var(--button-color);
-}
-
-.close-btn:hover .close-btn-icon {
+.close-btn:hover .close-btn__icon {
   fill: var(--button-color);
 }
 

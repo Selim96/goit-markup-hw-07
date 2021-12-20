@@ -1,4 +1,4 @@
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -12,11 +12,20 @@
   margin-bottom: 10px;
 }
 
-.input-wrap {
+.modal-field__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-field__wrap {
   position: relative;
 }
 
-.modal-input {
+.modal-field__input {
   width: 100%;
   height: 40px;
   border: 1px solid var(--input-border-color);
@@ -28,17 +37,15 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--button-color);
+  }
+  &:focus + .modal-field__icon {
+    fill: var(--button-color);
+  }
 }
 
-.modal-input:focus {
-  border-color: var(--button-color);
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--button-color);
-}
-
-.input-icon {
+.modal-field__icon {
   fill: var(--title-color);
   position: absolute;
   left: 12px;
@@ -49,7 +56,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text {
+.field {
+  margin-bottom: 20px;
+}
+
+.modal-field__text {
   width: 100%;
   height: 120px;
   border: 1px solid var(--input-border-color);
@@ -58,19 +69,6 @@
   color: var(--title-color);
   font-size: 14px;
   resize: none;
-}
-
-.modal-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.field {
-  margin-bottom: 20px;
 }
 
 .field:focus {
@@ -83,7 +81,7 @@
   margin-bottom: 30px;
 }
 
-.check-text {
+.modal-policy__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -97,7 +95,7 @@
   color: var(--button-color);
 }
 
-.check-text::before {
+.modal-policy__text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -109,7 +107,7 @@
   background-size: 16px;
   background-repeat: no-repeat;
 }
-.modal-check:checked + .check-text::before {
+.modal-policy__check:checked + .modal-policy__text::before {
   background-color: var(--button-color);
   border: none;
 }
