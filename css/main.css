@@ -83,7 +83,7 @@ body {
   margin-right: 93px;
 }
 
-.nav__list {
+.nav {
   display: flex;
 }
 
@@ -124,7 +124,7 @@ body {
   bottom: -32px;
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
